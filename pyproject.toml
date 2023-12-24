@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "src"
-version = "1.0b"
+version = "1.1b"
 description = ""
 authors = []
 license = "Unlicense"
@@ -16,4 +16,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-yt-dl-scli = "src.main:run"
+yt-dl-scli = "yt-dl-scli.main:run"
