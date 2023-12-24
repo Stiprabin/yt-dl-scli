@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "yt-dl-scli"
+name = "yt_dl_scli"
 version = "1.1b"
 description = ""
 authors = []
@@ -16,4 +16,4 @@ requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
 
 [tool.poetry.scripts]
-yt-dl-scli = "yt-dl-scli.main:run"
+yt-dl-scli = "yt_dl_scli.main:run"
