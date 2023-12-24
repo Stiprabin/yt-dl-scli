@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "yt_dl_scli"
-version = "1.1b"
+version = "1.2b"
 description = ""
 authors = []
 license = "Unlicense"
