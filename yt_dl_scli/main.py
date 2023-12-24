@@ -57,7 +57,7 @@ def run(urls: tuple[str], audio: str, video: str) -> None:
         filenames = downloadFilesGetFileNames(urls, options)
         # WEBM to MP4.
         for f in filenames:
-            processRun(f, f'ffmpeg -i "{f}" -c:v copy "{f[:-5]}.mp4"')
+            processRun(f, f'ffmpeg -y -i "{f}" -c:v copy "{f[:-5]}.mp4"')
 
     if audio:
         # Add options for downloading audios.
@@ -77,5 +77,5 @@ def run(urls: tuple[str], audio: str, video: str) -> None:
         # M4A to MP3.
         for f in filenames:
             processRun(
-                f, f'ffmpeg -i "{f}" -c:v copy -c:a libmp3lame -q:a 4 "{f[:-4]}.mp3"'
+                f, f'ffmpeg -y -i "{f}" -c:v copy -c:a libmp3lame -q:a 4 "{f[:-4]}.mp3"'
             )
