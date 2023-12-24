@@ -1,5 +1,5 @@
 [tool.poetry]
-name = "src"
+name = "yt-dl-scli"
 version = "1.1b"
 description = ""
 authors = []
