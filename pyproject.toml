@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "src"
+version = "0.9b"
+description = ""
+authors = []
+license = "Unlicense"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+yt-dlp = "^2023.11.16"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry.scripts]
+yt-dl-scli = "src.main:run"
