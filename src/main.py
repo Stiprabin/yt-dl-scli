@@ -50,7 +50,7 @@ def run(urls: tuple[str], audio: str, video: str) -> None:
     :param audio:  Download audio in MP3 format.
     :param video:  Download video in MP4 format.
     """
-    options = {}  # Options for downloading video.
+    options = {"outtmpl": "%(title)s.%(ext)s"}  # Options for downloading video.
 
     if video:
         # Download WEBM files and get file names.
