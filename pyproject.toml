@@ -1,9 +1,10 @@
 [tool.poetry]
 name = "src"
-version = "0.9b"
+version = "1.0b"
 description = ""
 authors = []
 license = "Unlicense"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.10"
