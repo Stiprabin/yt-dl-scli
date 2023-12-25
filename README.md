@@ -39,7 +39,7 @@ Download videos from a file with URLs:
 $ yt-dl-scli $(cat urls.txt) --video
 ```
 
-Secure audio download from a file with URLs **(Bash-script)**:
+Download videos from a file with URLs safely **(Bash-script)**:
 
 ```bash
 #!/bin/bash
@@ -52,6 +52,6 @@ fi
 
 for url in $(cat "$file")
 do
-  yt-dl-scli "$url" --audio
+  yt-dl-scli "$url" --video
 done < "$file"
 ```
