@@ -33,8 +33,25 @@ Download audio from URL:
 $ yt-dl-scli <URL> --audio
 ```
 
-Download videos from file with URLs:
+Download videos from a file with URLs:
 
 ```bash
 $ yt-dl-scli $(cat urls.txt) --video
+```
+
+Secure audio download from a file with URLs **(Bash-script)**:
+
+```bash
+#!/bin/bash
+
+if [ -z "$file" ]
+then
+  echo "Args?"
+  exit 1
+fi
+
+for url in $(cat "$file")
+do
+  yt-dl-scli "$url" --audio
+done < "$file"
 ```
