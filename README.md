@@ -44,14 +44,14 @@ Download videos from a file with URLs safely **(Bash-script)**:
 ```bash
 #!/bin/bash
 
-if [ -z "$file" ]
+if [ -z "$1" ]
 then
   echo "Args?"
   exit 1
 fi
 
-for url in $(cat "$file")
+for url in $(cat "$1")
 do
   yt-dl-scli "$url" --video
-done < "$file"
+done < "$1"
 ```
