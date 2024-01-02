@@ -14,7 +14,7 @@ To install it in **Termux** using [pipx](https://github.com/pypa/pipx), type:
 $ pkg update
 $ pkg upgrade
 $ pkg install ffmpeg
-$ pipx install "git+https://github.com/StipRabyn/yt-dl-scli/"
+$ pipx install "git+https://github.com/Stiprabin/yt-dl-scli/"
 ```
 
 ## OPTIONS
